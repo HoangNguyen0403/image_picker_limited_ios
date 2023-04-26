@@ -140,7 +140,7 @@ NSMutableDictionary<PHAsset *, UIImage *> *cellImageCache;
         _addTitleLabel.textAlignment = NSTextAlignmentCenter;
         _addTitleLabel.font = [UIFont systemFontOfSize:14];
         _addTitleLabel.numberOfLines = 0;
-        _addTitleLabel.text = @"Add more accessible photos";
+        _addTitleLabel.text = @"Add more photos";
     }
     return _addTitleLabel;
 }
@@ -230,7 +230,7 @@ NSMutableDictionary<PHAsset *, UIImage *> *cellImageCache;
     
     //标题
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 0, CGRectGetWidth(toolBar.frame)-200, ToolbarHeight)];
-    titleLabel.text = @"Recent Projects";
+    titleLabel.text = @"Selected photos";
     titleLabel.font = [UIFont systemFontOfSize:16];
     titleLabel.textColor = [UIColor blackColor];
     titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -293,7 +293,7 @@ NSMutableDictionary<PHAsset *, UIImage *> *cellImageCache;
     if (appName.length == 0) {
         appName = [infoPlist objectForKey:@"CFBundleName"];
     }
-    textLabel.text = [NSString stringWithFormat:@"you have set %@ Only some photos in the album can be accessed, it is recommended to allow access All Photos", appName];
+    textLabel.text = [NSString stringWithFormat:@"%@ has limited access into Photos. Only some photos in the album can be access, it is recommended to allow access All Photos in Settings", appName];
     [bottombar addSubview:textLabel];
     
     UIImageView *rightArrow = [[UIImageView alloc] initWithFrame:CGRectMake(CGRectGetWidth(bottombar.frame) - 16 - 24, (60 - 24) / 2.0, 24, 24)];
