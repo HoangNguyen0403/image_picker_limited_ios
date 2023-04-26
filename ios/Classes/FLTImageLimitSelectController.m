@@ -293,7 +293,7 @@ NSMutableDictionary<PHAsset *, UIImage *> *cellImageCache;
     if (appName.length == 0) {
         appName = [infoPlist objectForKey:@"CFBundleName"];
     }
-    textLabel.text = [NSString stringWithFormat:@"you have set %@ Only some photos in the album can be accessed, it is recommended to allow access "All Photos"", appName];
+    textLabel.text = [NSString stringWithFormat:@"you have set %@ Only some photos in the album can be accessed, it is recommended to allow access All Photos", appName];
     [bottombar addSubview:textLabel];
     
     UIImageView *rightArrow = [[UIImageView alloc] initWithFrame:CGRectMake(CGRectGetWidth(bottombar.frame) - 16 - 24, (60 - 24) / 2.0, 24, 24)];
