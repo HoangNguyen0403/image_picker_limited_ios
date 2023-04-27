@@ -230,7 +230,7 @@ NSMutableDictionary<PHAsset *, UIImage *> *cellImageCache;
     
     //标题
     UILabel *titleLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 0, CGRectGetWidth(toolBar.frame)-200, ToolbarHeight)];
-    titleLabel.text = @"Selected photos";
+    titleLabel.text = NSLocalizedStringFromTableInBundle(@"Selected_photos", nil, [NSBundle bundleForClass:[FLTImageLimitSelectCell class]], @"");
     titleLabel.font = [UIFont systemFontOfSize:16];
     titleLabel.textColor = [UIColor blackColor];
     titleLabel.textAlignment = NSTextAlignmentCenter;

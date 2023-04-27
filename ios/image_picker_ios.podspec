@@ -15,6 +15,7 @@ Downloaded by pub (not CocoaPods).
   s.source           = { :http => 'https://github.com/flutter/plugins/tree/main/packages/image_picker_ios' }
   s.documentation_url = 'https://pub.dev/packages/image_picker_ios'
   s.source_files = 'Classes/**/*.{h,m}'
+  s.resources = "Resources/*.{lproj,png,json}"
   s.public_header_files = 'Classes/**/*.h'
   s.module_map = 'Classes/ImagePickerPlugin.modulemap'
   s.dependency 'Flutter'
